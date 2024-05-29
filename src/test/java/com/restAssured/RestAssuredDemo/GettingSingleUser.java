@@ -1,0 +1,18 @@
+package com.restAssured.RestAssuredDemo;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class GettingSingleUser {
+
+	public static void main(String[] args) {
+		RestAssured.baseURI="https://reqres.in";
+		RequestSpecification req=RestAssured.given();
+		Response res=req.get("api/users/2");
+		System.out.println(res.asPrettyString());
+		System.out.println(res.getTime());
+		System.out.println(res.getHeader("Content-Type"));
+		
+	}
+}

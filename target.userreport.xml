@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.799" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="Creating User" name="Create Users" time="0.25">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When User Enters name and job...............................................passed
+And User hits the API.......................................................passed
+Then User should be created.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating User" name="Create data with multiple data - Example #1.1" time="0.011">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When User enter "Kumardip" and "Analyst"....................................passed
+And User hit the API........................................................passed
+Then User should be create..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating User" name="Create data with multiple data - Example #1.2" time="0.009">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When User enter "Subhadip" and "Manager"....................................passed
+And User hit the API........................................................passed
+Then User should be create..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating User" name="Create data with multiple data - Example #1.3" time="0.022">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When User enter "Suraj" and "Manager".......................................passed
+And User hit the API........................................................passed
+Then User should be create..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating User" name="To update a value with put" time="0.009">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When user enters job........................................................passed
+And User hits the put API...................................................passed
+Then User provided value should updated.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating User" name="To update a value with patch request" time="0.006">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When User enters a name.....................................................passed
+And User hits the patch API.................................................passed
+Then Patch method work successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating User" name="To Delete a record" time="0.004">
+<system-out><![CDATA[
+Given User is on Reqres page................................................passed
+When User hits the delete API...............................................passed
+Then Record should delete...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

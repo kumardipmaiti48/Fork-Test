@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="name" value="Kumardip"/>
+  <parameter name="job" value="Analyst"/>
+  <!-- Suite level parameters are like global variables which can be called from any method -->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.restAssured.RestAssuredDemo.TestNGTest4"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="Test1">
+  <parameter name="name" value="Subhadip"/>
+  <parameter name="job" value="Software Engineer"/>
+  <!-- Test level parameters are like local variables which work only on that particular test -->
+  <!-- If both suite and test has parameters then suite level variables are overridden by test level variables -->
+    <classes>
+      <class name="com.restAssured.RestAssuredDemo.TestNGTest4">
+      	<methods>
+      		<include name="addUser"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
